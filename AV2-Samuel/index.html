@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Villa Campestre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Villa Campestre</h1>
+
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#pousada">A Pousada</a></li>
+                <li><a href="#acomodacoes">Acomodações</a></li>
+                <li><a href="#turismo">Turismo</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="abrirMenu()">☰</button>
+        </nav>
+    </header>
+
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-conteudo">
+            <h2>Villa Campestre</h2>
+
+            <p>
+                O refúgio da sua mente.
+            </p>
+
+            <a href="#pousada" class="botao">
+                Conheça a pousada
+            </a>
+        </div>
+
+    </section>
+
+
+    <section id="pousada" class="secao">
+
+        <h2>Um lugar para descansar</h2>
+
+        <p class="texto">
+            O Villa Campestre foi criada para proporcionar
+            conforto, tranquilidade e contato com a natureza.
+            Localizada em Balneário Camboriú, Santa Catarina,
+            nosso hotel é o lugar perfeito para quem deseja
+            aproveitar as vistas e as calmarias do campo com
+            uma ilha exclusiva para nossos hóspedes, além das
+            belezas naturais da região.
+        </p>
+
+
+        <div class="diferenciais">
+
+            <div class="diferencial">
+                <span>🏊</span>
+                <h3>Piscina</h3>
+                <p>Área de lazer para toda a família.</p>
+            </div>
+
+            <div class="diferencial">
+                <span>🍳</span>
+                <h3>Café da Manhã</h3>
+                <p>Um café especial para começar o dia.</p>
+            </div>
+
+            <div class="diferencial">
+                <span>🌳</span>
+                <h3>Natureza</h3>
+                <p>Ambiente cercado pelo verde.</p>
+            </div>
+
+            <div class="diferencial">
+                <span>📶</span>
+                <h3>Wi-Fi</h3>
+                <p>Internet disponível para os hóspedes.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="acomodacoes" class="secao fundo">
+
+        <h2>Nossas Acomodações</h2>
+
+        <div class="cards">
+
+
+            <!-- HOTEL -->
+            <div class="card">
+
+                <img src="imagens/hotel 1.jpg" alt="Nosso hotel">
+
+                <div class="card-conteudo">
+
+                    <h3>Nosso hotel</h3>
+
+                    <p>
+                        Um hotel muito confortável com 20 quartos,
+                        uma vista maravilhosa e uma estética bem rústica.
+                    </p>
+
+
+                    <p>
+                        ✔ Ar-condicionado em todos os quartos<br>
+                        ✔ TV<br>
+                        ✔ Frigobar<br>
+                        ✔ Wi-Fi
+                    </p>
+
+                    <button onclick="mostrarDetalhes(
+                        'Nosso hotel',
+                        'Nosso hotel possui 20 quartos confortáveis, com uma decoração rústica e uma vista maravilhosa. Todos os quartos possuem ar-condicionado, TV, frigobar e Wi-Fi, proporcionando uma estadia confortável e tranquila para os hóspedes.'
+                    )">
+                        Ver detalhes
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUARTO 1 -->
+            <div class="card">
+
+                <img src="imagens/quarto1.jpg" alt="Área da piscina">
+
+                <div class="card-conteudo">
+
+                    <h3>Quarto Standard</h3>
+
+                    <p>
+                       Nosso Quarto Standard oferece um ambiente confortável e aconchegante, ideal para quem busca uma estadia tranquila. O quarto possui uma decoração simples e agradável, proporcionando um espaço perfeito para descansar depois de aproveitar as atividades do hotel.
+                    </p>
+
+
+                    <button onclick="mostrarDetalhes(
+                        'Quarto Standard',
+                
+                        'Acomodação confortável e aconchegante para uma estadia tranquila. Cama confortável, Ar-condicionado, TV, Frigobar, Wi-Fi, Banheiro Privativo, Serviço de limpeza'
+                    )">
+                        Ver detalhes
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUARTO 2 -->
+            <div class="card">
+
+                <img src="imagens/quarto2.jpg" alt=" Fazendinha ">
+
+                <div class="card-conteudo">
+
+                    <h3>Quarto Nature</h3>
+
+                    <p>
+                           O Quarto com Vista para a Natureza é perfeito para quem gosta de tranquilidade e de estar perto do ambiente natural. A acomodação possui uma vista agradável para as áreas verdes do hotel, criando um clima relaxante para aproveitar a estadia.
+                    </p>
+
+                    <button onclick="mostrarDetalhes(
+                        'Nossa fazendinha',
+                        'Quarto com uma bela vista das áreas verdes do hotel. Cama confortável, Vista para natureza, Ar-condicionado, TV, Frigobar, Wi-Fi, Banheiro Privativo, Serviço de limpeza'
+                    )">
+                        Ver detalhes
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="turismo" class="secao">
+
+        <h2>Descubra Villa Campestre</h2>
+
+        <p class="texto">
+            Além de aproveitar a pousada, conheça alguns dos
+            lugares incríveis que nosso hotel oferece.
+        </p>
+
+
+        <div class="turismo-grid">
+
+
+            <div class="turismo-card">
+
+                <img src="imagens/cavalo.jpg" alt="Passeio á cavalo">
+
+                <h3>Passeio á cavalo</h3>
+
+                <p>
+                    Explore as áreas do hotel em um passeio tranquilo e especial a cavalo.
+                </p>
+
+            </div>
+
+
+            <div class="turismo-card">
+
+                <img src="imagens/fogueira.jpg" alt="Fogueira">
+
+                <h3>Fogueira</h3>
+
+                <p>
+                    Um espaço aconchegante para relaxar e aproveitar a noite com a família.
+                </p>
+
+            </div>
+
+
+            <div class="turismo-card">
+
+                <img src="imagens/trilha.jpg" alt="Trilha">
+
+                <h3>Trilhas</h3>
+
+                <p>
+                  Caminhe pela natureza e descubra belas paisagens ao redor do hotel.
+                </p>
+
+            </div>
+
+
+            <div class="turismo-card">
+
+                <img src="imagens/hota.jpg" alt="Horta">
+
+                <h3>Horta</h3>
+
+                <p>
+                   Conheça o cultivo de alimentos e descubra um pouco mais sobre a vida no campo.
+                </p>
+
+            </div>
+
+
+            <div class="turismo-card">
+
+                <img src="imagens/pesqueiro.jpg" alt="Pesqueiro">
+
+                <h3>Pesqueiro</h3>
+
+                <p>
+                  Um lugar tranquilo para pescar, relaxar e aproveitar o contato com a natureza.
+                </p>
+
+            </div>
+
+
+            <div class="turismo-card">
+
+                <img src="imagens/fazendinha.jpeg" alt="Fazendinha">
+
+                <h3>Fazendinha</h3>
+
+                <p>
+                   Conheça os animais e aproveite momentos divertidos em contato com a natureza.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao" class="localizacao">
+
+        <h2>📍 Onde estamos?</h2>
+
+        <p>
+            A Villa Campestre está localizada em
+            São Roque – São Paulo.
+        </p>
+
+        <p>
+            Próxima a Vinícola e atrações turísticas
+            da cidade.
+        </p>
+
+    </section>
+
+
+    <!-- CONTATO -->
+    <section id="contato" class="secao">
+
+        <h2>Entre em contato</h2>
+
+        <form onsubmit="enviarFormulario(event)">
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Seu nome"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Seu e-mail"
+                required
+            >
+
+            <textarea
+                id="mensagem"
+                placeholder="Sua mensagem"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Enviar mensagem
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <h2>Villa Campestre</h2>
+
+        <p>
+            Seu refúgio entre a natureza e o aconchego.
+        </p>
+
+        <p>
+            © 2026 Villa Campestre
+        </p>
+
+    </footer>
+
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+
+        <div class="modal-conteudo">
+
+            <span onclick="fecharModal()" class="fechar">
+                &times;
+            </span>
+
+            <h2 id="titulo-modal"></h2>
+
+            <p id="texto-modal"></p>
+
+            <button onclick="fecharModal()">
+                Fechar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
